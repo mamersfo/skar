@@ -1,0 +1,21 @@
+
+div.decorator-box
+{
+	border: solid 1px #aaaaaa;
+}
+
+div.decorator-title
+{
+	color: white;
+	background-color: green;
+	font-size: 9pt;
+	font-weight: bold;
+	height: 16px;
+}
+
+div.decorator-content
+{
+	overflow: auto;
+	margin: 4px;
+	width: 100%;
+}

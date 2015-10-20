@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>SKAR Content Management</title>
+	<META http-equiv="Content-Type" content="text/html; charset="8859-1">
+	<script src="scripts/prototype.js"> </script>
+	<script src="scripts/globals.js"> </script>
+	<script src="scripts/util.js"> </script>
+	<script src="scripts/resource.js"> </script>
+	<script src="scripts/controller.js"> </script>
+	<script src="scripts/container.js"> </script>
+	<script src="scripts/tree.js"> </script>
+	<script src="scripts/list.js"> </script>
+	<script src="scripts/channel.js"> </script>
+	<script src="scripts/editor.js"> </script>
+	<script src="scripts/decorator.js"> </script>
+	<script src="scripts/main.js"> </script>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/tree.css"/>
+	<link rel="stylesheet" type="text/css" href="css/channel.css"/>
+	<link rel="stylesheet" type="text/css" href="css/resource.css"/>
+	<link rel="stylesheet" type="text/css" href="css/error.css"/>
+	<link rel="stylesheet" type="text/css" href="css/dialog.css"/>
+	<link rel="stylesheet" type="text/css" href="css/decorator.css"/>
+	<link rel="stylesheet" type="text/css" href="css/toolbar.css"/>
+	<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+</head>
+<body onload="init()">
+
+	<div id="top">
+		<div id="header">
+			<img id="logo" src="img/logo.gif">
+		</div>
+		<div id="toolbar">
+			<div id="info">
+			</div>
+			<form id="tools" method="post" action="" 
+				onsubmit="controller.submit( 'tools' ); return false;">
+				<input type="image" src="img/action/logout.gif" 
+					onclick="controller.action='logout'" alt="Uitloggen"/>
+			</form>
+		</div>
+		<div id="left">
+			<div id="treeContainer">
+			</div>
+			<div id="inspectorContainer">
+			</div>
+		</div>
+		<div id="right">
+			<div id="contentContainer">
+			</div>
+		</div>
+	</div>
+	
+	<div id="error">
+	</div>
+	
+	<div id="dialog">
+	</div>
+	
+	<iframe id="upload">
+	</iframe>
+
+</body>
+</html>

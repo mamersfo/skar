@@ -1,0 +1,19 @@
+
+#dialog
+{
+	display: inline;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 260px;
+	height: 100px;
+	margin: auto;
+	padding: 10px;
+	z-index: 900;
+	visibility: hidden;
+	border: solid 2px green;
+	background-color: white;
+	cursor: pointer;	
+}

@@ -1,0 +1,101 @@
+
+/* Default */
+
+table.default
+{
+}
+
+td.default-property
+{
+	font-weight: bold;
+	vertical-align: top;
+	padding-top: 3px;
+}
+
+td.default-value
+{
+	vertical-align: top;
+}
+
+input.default
+{
+	width: 185px;
+	height: 20px;
+}
+
+textarea.default
+{
+	width: 185px;
+	height: 50px;
+}
+
+/* item */
+
+table.item
+{
+}
+
+td.item-property
+{
+	font-weight: bold;
+	vertical-align: top;
+	width: 79px;
+}
+
+td.item-value
+{
+	vertical-align: top;
+}
+
+input.item
+{
+	width: 321px;
+	height: 20px;
+}
+
+textarea.item
+{
+	width: 321px;
+	height: 62px;
+}
+
+table.links
+{
+	width: 321px;
+	height: 30px;
+}
+
+/* Pages */
+
+div.contenteditor
+{
+	width: 317px;
+	height: 275px;
+	border: inset 2px;
+	font-family: "Trebuchet MS";
+	font-size: 9pt;
+	line-height: 12pt;
+	text-align : left;
+}
+
+textarea.contenteditor
+{
+	width: 321px;
+	/* height: 193px; */
+	height: 275px;
+	border: inset 2px;
+	font-family: "Courier";
+	font-size: 8pt;
+	margin-bottom: 4px;
+	overflow: hidden;
+}
+
+/* List */
+
+select.list
+{
+	width: 100%;
+	font-size: 8pt;
+	border: inset 2px;
+}
+

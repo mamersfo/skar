@@ -1,0 +1,28 @@
+
+table.channel
+{
+	width: 100%;
+}
+
+td.channel
+{
+	vertical-align: top;
+	padding-bottom: 4px;
+}
+
+.unpublished
+{
+	color: red;
+}
+
+a.channel
+{
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a.channel:hover
+{
+	text-decoration: underline;
+}

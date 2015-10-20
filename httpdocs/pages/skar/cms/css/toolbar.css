@@ -1,0 +1,31 @@
+.toolbar ul
+{
+	display: table;
+	list-style-type: none;
+	margin: 0; 
+	padding: 0px;
+	border-right: solid 1px #000000;
+}
+
+.toolbar li
+{
+	display: table-cell;
+	position: relative;
+	float: left;
+	background-color: #ffffff;
+	color: #000000;
+	border: solid 1px #000000;
+	border-right: none;
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	width: 63px;
+	vertical-align: middle;
+}
+
+.toolbar li.selected
+{
+	color: #ffffff;
+	background-color: #666699;
+}

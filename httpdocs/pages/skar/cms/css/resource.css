@@ -1,0 +1,25 @@
+
+table.resource
+{
+	width: 100%;
+}
+
+td.resource-property
+{
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.resource-value
+{
+	vertical-align: top;
+}
+
+input.resource
+{
+	height: 20px;
+}
+
+textarea.resource
+{
+}

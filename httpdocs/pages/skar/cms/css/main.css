@@ -1,0 +1,158 @@
+html, body
+{
+	font-family: arial, helvetica;
+	font-size: 9pt;
+	background-color: #cccccc;
+	margin: 0px;
+	padding: 0px;
+}
+
+form
+{
+	margin: 0px;
+}
+
+a
+{
+	color: #666699;
+}
+
+td
+{
+	font-family: arial;
+	font-size: 8pt;
+}
+
+input
+{
+	font-family: arial;
+	font-size: 8pt;
+}
+
+textarea
+{
+	font-family: arial;
+	font-size: 8pt;
+}
+
+p
+{
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+
+#top
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 715px;
+	height: 650px;
+	margin: auto;
+	background-color: white;
+	visibility: hidden;
+}
+
+#header
+{
+	width: 100%;
+	height: 53px;
+	background-color: #669966;
+}
+
+#title
+{
+	color: white;
+	margin-left: 10px;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+#toolbar
+{
+	width: 100%;
+	height: 30px;
+	background-color: white;
+}
+
+#info
+{
+	display: inline;
+	float: left;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #666699;
+	margin: 8px;
+}
+
+#tools
+{
+	display: inline;
+	float: right;
+	height: 20px;
+	margin: 5px;
+}
+
+#logo
+{
+	vertical-align: middle;
+	border: none;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+
+#left
+{
+	float: left;
+	display: inline;
+	background-color: white;
+	overflow: hidden;
+}
+
+#right
+{
+	float: right;
+	display: inline;
+	background-color: white;
+	overflow: hidden;
+}
+
+#upload
+{
+	display: inline;
+	position: absolute;
+	top: 225px;
+	left: 225px;
+	width: 275px;
+	height: 90px;
+	visibility: hidden;
+	border: solid 2px green;
+	cursor: pointer;	
+}
+
+#treeContainer
+{
+	width: 280;
+	height: 330;
+	margin-left: 5px;
+}
+	
+#inspectorContainer
+{
+	width: 280px;
+	height: 230px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+#contentContainer
+{
+	width: 420px;
+	height: 560px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
