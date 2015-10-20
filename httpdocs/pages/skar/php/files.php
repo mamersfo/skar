@@ -13,16 +13,16 @@ $folder = $repo->listImages( '../images/backgrounds', $_REQUEST['uri'] );
 <?
 foreach ( $folder->items as $image )
 {
-	$url = "$folder->uri/$image->filename";
-	
-	?>
-	<tr>
-		<td><a href="<?= $url ?>" target="_blank"><?= $image->filename ?></a></td>
-		<td><?= $image->index ?></td>
-		<td><?= $image->description ?></td>
-		<td><?= $image->filesize ?></td>
-	</tr>
-	<?
+    $url = "$folder->uri/$image->filename";
+
+    ?>
+    <tr>
+        <td><a href="<?= $url ?>" target="_blank"><?= $image->filename ?></a></td>
+        <td><?= $image->index ?></td>
+        <td><?= $image->description ?></td>
+        <td><?= $image->filesize ?></td>
+    </tr>
+    <?
 }
 ?>
 </table>

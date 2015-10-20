@@ -63,4 +63,4 @@ $info .= (($perms & 0x0001) ?
             (($perms & 0x0200) ? 'T' : '-'));
 
 echo $info;
-?>  
+?>

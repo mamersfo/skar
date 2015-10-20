@@ -4,7 +4,7 @@
 if ( isset( $_REQUEST['title'] ) )
 {
 ?>
-	<title><?= $_REQUEST['title'] ?></title>
+    <title><?= $_REQUEST['title'] ?></title>
 <?
 }
 ?>
@@ -14,7 +14,7 @@ if ( isset( $_REQUEST['title'] ) )
 <!--
 BODY
 {
-	margin: 0px;
+    margin: 0px;
 }
 -->
 </style>
@@ -24,7 +24,7 @@ BODY
 
 if ( isset( $_REQUEST['picture'] ) )
 {
-	echo "<image src='$_REQUEST[picture]'/>";
+    echo "<image src='$_REQUEST[picture]'/>";
 }
 
 ?>
