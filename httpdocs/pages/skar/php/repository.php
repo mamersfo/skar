@@ -409,7 +409,7 @@ class Repository extends Connection
         {
             $query = "SELECT ( MAX( `id` ) + 1 ) AS `result` FROM `resource`";
 
-            $resource->id = $this->fetch( $query, $this->connection );
+            $resource->id = $this->fetch( $query );
 
             $attrs = array(
                 'oc',
@@ -464,7 +464,7 @@ class Repository extends Connection
             $query .= "WHERE `id` = $resource->id LIMIT 1";
         }
 
-        $this->execute( $query, $this->connection );
+        $this->execute( $query );
 
         if ( $resource instanceof Story )
         {
@@ -472,7 +472,7 @@ class Repository extends Connection
 
             $query = "DELETE FROM `page` WHERE `resource` = $resource->id";
 
-            $this->execute( $query, $this->connection );
+            $this->execute( $query );
 
             $count = count ( $resource->pages );
 
@@ -485,20 +485,20 @@ class Repository extends Connection
                 $query = "INSERT INTO `page` ( `resource`, `cindex`, `content` )
                           VALUES ( $resource->id, $i, '$content' )";
 
-                $this->execute( $query, $this->connection );
+                $this->execute( $query );
             }
 
             // links
 
             $query = "DELETE FROM `link` WHERE `source` = $resource->id";
 
-            $this->execute( $query, $this->connection );
+            $this->execute( $query );
 
             foreach( $resource->links as $link )
             {
                 $query = "INSERT INTO `link` ( `source`, `destination` ) VALUES ( $resource->id, $link->id )";
 
-                $this->execute( $query, $this->connection );
+                $this->execute( $query );
             }
 
             $resource->links = $this->retrieveInternalLinks( $resource->id );
@@ -509,7 +509,7 @@ class Repository extends Connection
 
     function deleteResource( $id )
     {
-        $this->execute( "DELETE FROM `resource` WHERE `id` = $id", $this->connection );
+        $this->execute( "DELETE FROM `resource` WHERE `id` = $id" );
     }
 }
 

@@ -62,13 +62,6 @@ class Connection
 
         $value = $sqlResult = pdo_query( $query )
             or die ( 'Connection->execute() - error: ' . pdo_error() );
-
-        if ( $value )
-        {
-            $result = pdo_affected_rows();
-        }
-
-        return $result;
     }
 
     function connect()
